@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Barber - Corte de Cabelo e Barba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Royal Barber</h1>
+            <p>Estilo e tradição em cada corte</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li class="cart-icon"><a href="#cart"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Seu melhor visual começa aqui</h2>
+                <p>Agende seu horário ou compre nossos serviços online</p>
+                <a href="#services" class="btn">Ver Serviços</a>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2>Nossos Serviços</h2>
+            <p class="subtitle">Todos os serviços por apenas $10 cada</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="corte cabelo.jpg" alt="Corte de Cabelo">
+                    <h3>Corte de Cabelo</h3>
+                    <p>Corte profissional com técnicas modernas</p>
+                    <button class="btn add-to-cart" data-service="Corte de Cabelo" data-price="10">Adicionar ao Carrinho - $10</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="barba.jpg" alt="Barba">
+                    <h3>Barba</h3>
+                    <p>Modelagem e tratamento completo para barba</p>
+                    <button class="btn add-to-cart" data-service="Barba" data-price="10">Adicionar ao Carrinho - $10</button>
+                </div>
+                
+                <div class="service-card">
+                    <img src="pacote.jpg" alt="Cabelo e Barba">
+                    <h3>Pacote Completo</h3>
+                    <p>Corte de cabelo + barba com desconto</p>
+                    <button class="btn add-to-cart" data-service="Pacote Completo" data-price="18">Adicionar ao Carrinho - $18</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Seu Carrinho</h2>
+                <div id="cart-items"></div>
+                <div id="cart-total">
+                    <p>Total: $<span id="total-amount">0</span></p>
+                </div>
+                <button id="checkout-btn" class="btn">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Royal Barber. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
